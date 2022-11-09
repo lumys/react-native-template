@@ -2,7 +2,7 @@ import React, { useCallback } from 'react';
 import { Button, ScrollView, Text } from 'react-native';
 import styled from 'styled-components/native';
 import cuid from 'cuid';
-import stackNav from '~/navigations/main/navigator/StackNav';
+import { stackNav } from '~/navigations/main/navigator/stackNav';
 
 const NavScreen = ({ navigation }) => {
   const handleNavigate = useCallback(
@@ -55,5 +55,3 @@ export const navScreen = {
     headerShown: false,
   },
 };
-
-export default NavScreen;

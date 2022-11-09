@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { stackScreen1 } from '~/screens/main/navigator/stack/StackScreen1';
-import { stackScreen2 } from '~/screens/main/navigator/stack/StackScreen2';
-import { stackScreen3 } from '~/screens/main/navigator/stack/StackScreen3';
+import { stackScreen1 } from '~/screens/main/navigator/stack/stackScreen1';
+import { stackScreen2 } from '~/screens/main/navigator/stack/stackScreen2';
+import { stackScreen3 } from '~/screens/main/navigator/stack/stackScreen3';
 
 const Nav = createStackNavigator();
 
@@ -32,7 +32,7 @@ const StackNav = () => {
   );
 };
 
-const stackNav = {
+export const stackNav = {
   name: 'stackNav',
   component: StackNav,
   options: {
@@ -40,5 +40,3 @@ const stackNav = {
     headerShown: false,
   },
 };
-
-export default stackNav;

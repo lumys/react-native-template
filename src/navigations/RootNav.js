@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import mainNav from '~/navigations/main/MainNav';
+import { mainNav } from '~/navigations/main/mainNav';
 
 const Stack = createNativeStackNavigator();
 

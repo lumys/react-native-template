@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { navScreen } from '~/screens/main/navigator/NavScreen';
-import stackNav from '~/navigations/main/navigator/StackNav';
+import { navScreen } from '~/screens/main/navigator/navScreen';
+import { stackNav } from '~/navigations/main/navigator/stackNav';
 
 const Nav = createStackNavigator();
 
@@ -25,12 +25,10 @@ const NavigatorNav = () => {
   );
 };
 
-const navigatorNav = {
+export const navigatorNav = {
   name: 'navigationNav',
   component: NavigatorNav,
   options: {
     title: '앱 네비게이션',
   },
 };
-
-export default navigatorNav;

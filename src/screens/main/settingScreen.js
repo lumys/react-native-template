@@ -18,5 +18,3 @@ export const settingScreen = {
     title: 'Setting',
   },
 };
-
-export default SettingScreen;

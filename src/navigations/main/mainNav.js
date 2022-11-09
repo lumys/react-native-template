@@ -1,8 +1,8 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { settingScreen } from '~/screens/main/SettingScreen';
-import { homeScreen } from '~/screens/main/HomeScreen';
-import navigatorNav from '~/navigations/main/navigator/NavigatorNav';
+import { settingScreen } from '~/screens/main/settingScreen';
+import { homeScreen } from '~/screens/main/homeScreen';
+import { navigatorNav } from '~/navigations/main/navigator/navigatorNav';
 
 const Nav = createDrawerNavigator();
 
@@ -32,9 +32,7 @@ const MainNav = () => {
   );
 };
 
-const mainNav = {
+export const mainNav = {
   name: 'mainNav',
   component: MainNav,
 };
-
-export default mainNav;

@@ -1,10 +1,10 @@
 import React, { useCallback } from 'react';
-import styled from 'styled-components/native';
 import cuid from 'cuid';
 import { Button, Text } from 'react-native';
-import { navScreen } from '~/screens/main/navigator/NavScreen';
+import styled from 'styled-components/native';
+import { stackScreen3 } from '~/screens/main/navigator/stack/stackScreen3';
 
-const StackScreen3 = ({ navigation }) => {
+const StackScreen2 = ({ navigation }) => {
   const handleNavigate = useCallback(
     (name) => () => {
       navigation.navigate(name);
@@ -19,11 +19,11 @@ const StackScreen3 = ({ navigation }) => {
   return (
     <Root>
       <RootInner>
-        <Title>Stack Screen 3</Title>
+        <Title>Stack Screen 2</Title>
 
         <NavigateButton
-          title="Stack 네비게이션 나가기"
-          onPress={handleNavigate(navScreen.name)}
+          title="다음 Stack"
+          onPress={handleNavigate(stackScreen3.name)}
         />
 
         <NavigateButton
@@ -56,14 +56,12 @@ const NavigateButton = styled(Button).attrs({
   },
 })``;
 
-export const stackScreen3 = {
-  name: 'stackScreen3',
-  component: StackScreen3,
+export const stackScreen2 = {
+  name: 'stackScreen2',
+  component: StackScreen2,
   key: cuid(),
   options: {
-    title: 'Stack3',
+    title: 'Stack2',
     headerShown: false,
   },
 };
-
-export default StackScreen3;

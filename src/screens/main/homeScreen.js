@@ -16,5 +16,3 @@ export const homeScreen = {
     title: 'Home',
   },
 };
-
-export default HomeScreen;
