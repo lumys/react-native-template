@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
 import cuid from 'cuid';
+import Text from '~/components/atoms/Text';
 
-const SettingScreen = () => {
+const Screen = () => {
   return (
     <View>
       <Text>Setting Screen</Text>
@@ -12,7 +13,7 @@ const SettingScreen = () => {
 
 export const settingScreen = {
   name: 'settingScreen',
-  component: SettingScreen,
+  component: Screen,
   key: cuid(),
   options: {
     title: 'Setting',

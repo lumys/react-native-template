@@ -1,17 +1,28 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import styled from 'styled-components/native';
+import Text from '~/components/atoms/Text';
 
-const HomeScreen = () => {
+const Screen = () => {
   return (
-    <View>
-      <Text>Home Screen</Text>
-    </View>
+    <Box>
+      <Title>Home Screen</Title>
+    </Box>
   );
 };
 
+const Box = styled.View`
+  margin: 10px;
+`;
+
+const Title = styled(Text).attrs({
+  h1: true,
+})`
+  padding: 20px 0;
+`;
+
 export const homeScreen = {
   name: 'homeScreen',
-  component: HomeScreen,
+  component: Screen,
   options: {
     title: 'Home',
   },

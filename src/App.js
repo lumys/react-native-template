@@ -13,16 +13,17 @@ import 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { useNavigationContainerRef } from '@react-navigation/native';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '@styles/theme';
+import { getTheme } from '@styles/theme';
 import RootNav from '~/navigations/RootNav';
 
 const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
+  const mode = useColorScheme();
+  const theme = getTheme(mode);
 
   return (
     <SafeAreaProvider>
       <ThemeProvider theme={theme}>
-        <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+        <StatusBar barStyle={`${mode}-content`} />
         <Main />
       </ThemeProvider>
     </SafeAreaProvider>

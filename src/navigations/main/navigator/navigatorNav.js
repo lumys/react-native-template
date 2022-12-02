@@ -5,7 +5,7 @@ import { stackNav } from '~/navigations/main/navigator/stackNav';
 
 const Nav = createStackNavigator();
 
-const NavigatorNav = () => {
+const Navigator = () => {
   return (
     <Nav.Navigator initialRouteName={navScreen.name}>
       <Nav.Group>
@@ -27,7 +27,7 @@ const NavigatorNav = () => {
 
 export const navigatorNav = {
   name: 'navigationNav',
-  component: NavigatorNav,
+  component: Navigator,
   options: {
     title: '앱 네비게이션',
   },

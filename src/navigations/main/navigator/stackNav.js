@@ -6,7 +6,7 @@ import { stackScreen3 } from '~/screens/main/navigator/stack/stackScreen3';
 
 const Nav = createStackNavigator();
 
-const StackNav = () => {
+const Navigator = () => {
   return (
     <Nav.Navigator initialRouteName={stackScreen1.name}>
       <Nav.Group>
@@ -34,7 +34,7 @@ const StackNav = () => {
 
 export const stackNav = {
   name: 'stackNav',
-  component: StackNav,
+  component: Navigator,
   options: {
     title: '기본 네비게이션',
     headerShown: false,

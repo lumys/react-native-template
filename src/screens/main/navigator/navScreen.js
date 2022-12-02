@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import cuid from 'cuid';
 import { stackNav } from '~/navigations/main/navigator/stackNav';
 
-const NavScreen = ({ navigation }) => {
+const Screen = ({ navigation }) => {
   const handleNavigate = useCallback(
     (name) => () => {
       navigation.navigate(name);
@@ -49,7 +49,7 @@ const NavigateButton = styled(Button).attrs({
 
 export const navScreen = {
   name: 'navScreen',
-  component: NavScreen,
+  component: Screen,
   key: cuid(),
   options: {
     headerShown: false,

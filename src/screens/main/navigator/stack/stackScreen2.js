@@ -4,7 +4,7 @@ import { Button, Text } from 'react-native';
 import styled from 'styled-components/native';
 import { stackScreen3 } from '~/screens/main/navigator/stack/stackScreen3';
 
-const StackScreen2 = ({ navigation }) => {
+const Screen = ({ navigation }) => {
   const handleNavigate = useCallback(
     (name) => () => {
       navigation.navigate(name);
@@ -58,7 +58,7 @@ const NavigateButton = styled(Button).attrs({
 
 export const stackScreen2 = {
   name: 'stackScreen2',
-  component: StackScreen2,
+  component: Screen,
   key: cuid(),
   options: {
     title: 'Stack2',
